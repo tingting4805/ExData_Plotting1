@@ -26,7 +26,7 @@ bigdf$ConvertedDateTime <- as.POSIXct(strptime(bigdf$ConvertedDateTime,
 
 par(mfrow = c(2,2))
 with(bigdf, {
-  plot(ConvertedDateTime,Global_active_power,type="l", ylab="Global Active Power")
+  plot(ConvertedDateTime,Global_active_power,type="l", ylab="Global Active Power",xlab="")
   plot(ConvertedDateTime, Voltage,type="l",ylab="Voltage",xlab="datetime")
   plot(ConvertedDateTime,Sub_metering_1,type="l", col="black",
        xlab = "", ylab = "Energy sub metering")
